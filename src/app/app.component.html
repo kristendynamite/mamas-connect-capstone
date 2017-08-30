@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <h1>{{title}}</h1>
+  <div class="navbar">
+    <ul class="welcome-nav">
+      <li><a routerLink="signup">Sign up</a></li>
+      <li><a routerLink="login">Log in</a></li>
+    </ul>
+  </div>
+  <router-outlet></router-outlet>
+</div>

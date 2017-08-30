@@ -1,0 +1,14 @@
+.container {
+  h1 {
+    text-align: center;
+  }
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    ul {
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
