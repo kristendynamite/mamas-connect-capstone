@@ -1,0 +1,114 @@
+.container-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+  .splash-intro {
+    background: linear-gradient(to left, $blue, #cbd4f2);
+    color: $off-white;
+    text-align: center;
+    margin-top: 0;
+    padding: 10px 50px;
+    h4 {
+      font-weight: normal;
+      .title {
+        font-family: 'Berkshire Swash', cursive;
+        letter-spacing: 1px;
+      }
+    }
+    p {
+      font-weight: lighter;
+      font-size: 16px;
+    }
+    button {
+      text-transform: uppercase;
+      background: $blue;
+      border-style: none;
+      border: solid 2px $off-white;
+      font-size: 20px;
+      color: $off-white;
+      font-weight: 200;
+      letter-spacing: 1px;
+      padding: 10px 30px;
+      a:link {
+        text-decoration: none;
+      }
+      a:visited {
+        color: $off-white;
+        text-decoration-line: none;
+      }
+    }
+  }
+  .welcome-cards {
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    .card {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+      img {
+        width: 120px;
+      }
+      h2 {
+        font-family: 'Vidaloka', serif;
+      }
+    }
+    :first-child {
+      .message-icon {
+        border: 1px solid $blue;
+        padding: 20px;
+        padding-top: 30px;
+        background-color: #ebeffb;
+        border-radius: 100%;
+      }
+    }
+    :nth-of-type(2) {
+      .circle-border {
+        border: 1px solid $charcoal;
+        background-color: #e7e7e7;
+        border-radius: 100%;
+        img {
+          padding: 35px 20px;
+        }
+      }
+    }
+    :nth-of-type(3) {
+      .circle-border {
+        border: 1px solid $red;
+        background-color: #f5e9e9;
+        border-radius: 100%;
+        img {
+          padding: 20px;
+          padding-top: 30px;
+        }
+      }
+    }
+  }
+  button {
+    text-transform: uppercase;
+    background: $blue;
+    border-style: none;
+    border: solid 2px $off-white;
+    font-size: 20px;
+    color: $off-white;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+    width: 200px;
+    height: 50px;
+    a:link {
+      text-decoration: none;
+      color: $off-white;
+    }
+    a:visited {
+      color: $off-white;
+      text-decoration-line: none;
+    }
+  }
+}
