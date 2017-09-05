@@ -1,4 +1,8 @@
-# MamasConnect
+# Mamas Connect
+
+![mc-homepage-loggedin](https://user-images.githubusercontent.com/27696622/30043907-3a3a058e-91af-11e7-9236-17558a5ebefd.png)
+
+This is an application currently in production, set to launch in October 2017. Mamas Connect is a networking app for mothers living in Portland who are looking for advice, local playdates, and a genuine way to connect with other mothers living in their area. The app will feature messaging, a blog, and a calendar of local events, and will give users a way to favorite events and blog posts.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
