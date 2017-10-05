@@ -1,3 +1,19 @@
-<p>
-  signup works!
-</p>
+<div class="container-signup">
+  <img src="../assets/mc-logo.png" alt="Mamas Connect Logo">
+  <h1>Sign up!</h1>
+  <form id="signup-form">
+    <input type="text" name="" value="" placeholder="Enter your name">
+    <input type="text" name="" value="" placeholder="Enter your email address">
+    <div class="select-city">Select your city:</div>
+    <select name="city">
+      <option value=""></option>
+      <option value="">Portland</option>
+      <option value="">Seattle</option>
+      <option value="">San Francisco</option>
+    </select>
+    <input type="text" name="" value="" placeholder="Enter password">
+    <input type="text" name="" value="" placeholder="Re-enter password">
+    <button type="submit" name="button"><a routerLink="/login">Enter</a></button>
+  </form>
+  <p>Already a member? <a routerLink="/login">Sign in</a></p>
+</div>

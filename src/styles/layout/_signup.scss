@@ -1,0 +1,59 @@
+.container-signup {
+  display:grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-top: 50px;
+  img {
+    align-self: center;
+    justify-self: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  form {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 200px;
+    align-self: center;
+    justify-self: center;
+    input {
+      margin-bottom: 10px;
+      padding: 5px;
+      &::placeholder {
+        font-family: 'Lato';
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        color: $charcoal;
+        line-height: 17px;
+      }
+    }
+    .select-city {
+      font-family: 'Lato';
+      text-align: center;
+      font-size: 14px;
+      font-weight: 300;
+      color: $charcoal;
+      line-height: 17px;
+    }
+    select {
+      margin-bottom: 10px;
+    }
+    button {
+      @include blue-button;
+      margin-top: 40px;
+      width: 160px;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+  p {
+    margin-top: 40px;
+    align-self: center;
+    justify-self: center;
+    font-size: 14px;
+    color: $blue;
+    font-weight: lighter;
+  }
+}

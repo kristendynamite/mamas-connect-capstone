@@ -1,0 +1,61 @@
+@mixin blue-button {
+  font-family: 'Lato';
+  text-transform: uppercase;
+  background: $blue;
+  border-style: none;
+  border: solid 2px $off-white;
+  font-size: 20px;
+  color: $off-white;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  a:link {
+    text-decoration: none;
+    color: $off-white;
+    &:hover {
+      color: $blue;
+    }
+  }
+  a:visited {
+    color: $off-white;
+    text-decoration-line: none;
+    &:hover {
+      color: $blue;
+    }
+  }
+  &:hover {
+    color: $blue;
+    background: $off-white;
+    border: 1px solid $blue;
+  }
+}
+
+@mixin white-button {
+  text-transform: uppercase;
+  background: $blue;
+  border-style: none;
+  border: solid 2px $off-white;
+  font-size: 20px;
+  color: $off-white;
+  font-weight: 200;
+  font-family: 'Lato';
+  letter-spacing: .22px;
+  padding: 10px 30px;
+  width: 175px;
+  margin: 20px 0;
+  &:hover {
+    color: $blue;
+    background: $off-white;
+  }
+  a:link {
+    text-decoration: none;
+    color: $off-white;
+  }
+  a:visited {
+    color: $off-white;
+    text-decoration-line: none;
+    &:hover {
+      color: $blue;
+    }
+  }
+}

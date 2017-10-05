@@ -2,48 +2,44 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  img {
+  #splash-image {
     width: 100%;
   }
   .splash-intro {
-    background: linear-gradient(to left, $blue, #cbd4f2);
+    // background: linear-gradient(to left, $blue, #cbd4f2);
+    background: $blue;
     color: $off-white;
     text-align: center;
-    margin-top: 0;
-    padding: 10px 50px;
+    margin-top: -100px;
+    padding: 10px 15px;
     h4 {
-      font-weight: normal;
+      font-weight: lighter;
+      font-size: 18px;
+      padding: 0 25px;
       .title {
         font-family: 'Berkshire Swash', cursive;
+        font-size: 20px;
         letter-spacing: 1px;
       }
     }
     p {
       font-weight: lighter;
-      font-size: 14px;
+      font-size: 16px;
+      &:last-of-type {
+        font-size: 14px;
+        a:visited {
+          color: $off-white;
+        }
+      }
     }
     button {
-      text-transform: uppercase;
-      background: $blue;
-      border-style: none;
-      border: solid 2px $off-white;
-      font-size: 20px;
-      color: $off-white;
-      font-weight: 200;
-      letter-spacing: 1px;
-      padding: 10px 30px;
-      a:link {
-        text-decoration: none;
-      }
-      a:visited {
-        color: $off-white;
-        text-decoration-line: none;
-      }
+      @include white-button;
     }
   }
   .welcome-cards {
     margin-right: 50px;
     margin-left: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     .card {
@@ -53,7 +49,7 @@
       align-items: center;
       margin-top: 30px;
       img {
-        width: 120px;
+        width: 80px;
       }
       h2 {
         font-family: 'Vidaloka', serif;
@@ -90,25 +86,8 @@
       }
     }
   }
-  button {
-    text-transform: uppercase;
-    background: $blue;
-    border-style: none;
-    border: solid 2px $off-white;
-    font-size: 20px;
-    color: $off-white;
-    font-weight: 200;
-    letter-spacing: 1px;
-    padding: 10px 30px;
-    width: 200px;
-    height: 50px;
-    a:link {
-      text-decoration: none;
-      color: $off-white;
-    }
-    a:visited {
-      color: $off-white;
-      text-decoration-line: none;
-    }
+  .about-button {
+    @include blue-button;
+    margin: 30px 0;
   }
 }
