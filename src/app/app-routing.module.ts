@@ -1,5 +1,7 @@
-import { ModuleWithProviders } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
+//COMPONENTS
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeComponent } from './home/home.component';
@@ -9,23 +11,20 @@ import { AboutComponent } from './about/about.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 
-const appRoutes: Routes = [
+const routes: Routes = [
   {
     path: '',
-    component: WelcomeComponent
+    loadChildren: './home/home.module#HomeModule',
   },
   {
-    path: 'about',
-    component: AboutComponent
-  },
-  {
-    path: 'signup',
-    component: SignupComponent
-  },
-  {
-    path: 'login',
-    component: LoginComponent
+    path: 'app',
+    loadChildren: './root/root.module#RootModule'
   }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
+@NgModule({
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  exports: [RouterModule]
+})
+
+export class AppRoutingModule { }
