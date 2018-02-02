@@ -4,6 +4,10 @@
   align-items: center;
   #splash-image {
     width: 100%;
+    @media #{$desktop-bp} {
+      width: 100%;
+      height: 500px;
+    }
   }
   .splash-intro {
     // background: linear-gradient(to left, $blue, #cbd4f2);
@@ -12,10 +16,14 @@
     text-align: center;
     margin-top: -100px;
     padding: 10px 15px;
+    @media #{$desktop-bp} {
+      width: 100%;
+    }
     h4 {
       font-weight: lighter;
       font-size: 18px;
       padding: 0 25px;
+      line-height: 22px;
       .title {
         font-family: 'Berkshire Swash', cursive;
         font-size: 20px;
@@ -25,12 +33,12 @@
     p {
       font-weight: lighter;
       font-size: 16px;
-      &:last-of-type {
-        font-size: 14px;
-        a:visited {
-          color: $off-white;
-        }
-      }
+      // &:last-of-type {
+      //   font-size: 14px;
+      //   a:visited {
+      //     color: $off-white;
+      //   }
+      // }
     }
     button {
       @include white-button;
@@ -42,17 +50,28 @@
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+    @media #{$desktop-bp} {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+    }
     .card {
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 30px;
+      width: 200px;
       img {
         width: 80px;
       }
       h2 {
-        font-family: 'Vidaloka', serif;
+        width: 170px;
+      }
+      p {
+        font-size: 16px;
+        width: 195px;
+        line-height: 22px;
       }
     }
     :first-child {
